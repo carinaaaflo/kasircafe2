@@ -3,21 +3,20 @@ import streamlit as st
 st.title("Kasir Chilless Cafe")
 st.write("-------------------------- Selamat Datang Di Chilless Cafe --------------------------")
 
-menu = {
-    "1. Chicken Ball  :           @23000",
-    "2. French Fries  :           @15000",
-    "3. Vanila Latte  :           @18000",
-    "4. Rose Tea      :           @15000"
-    "5. Dumpling      :           @12000",
-    "6. Ice Cream     :           @10000",
-    "7. Pecel Buaya Darat :       @200000",
-    "8. Nasi Goreng Cacing Kremi :@150000",  
-}
-st.write("                      Chilless Cafe                      ")
 st.write("====================== Daftar Menu ======================")
-for i in menu:
-    st.write("Daftar Menu : ", i, "\t Harga : ", menu[i])
-st.write("=========================================================")
+
+st.write("1. Chicken Ball  :           @23000")
+st.write("2. French Fries  :           @15000")
+st.write("3. Vanila Latte  :           @18000")
+st.write("4. Rose Tea      :           @15000")
+st.write("5. Dumpling      :           @12000")
+st.write("6. Ice Cream     :           @10000")
+st.write("7. Pecel Buaya Darat :       @200000")
+st.write("8. Nasi Goreng Cacing Kremi :@150000") 
+
+st.write("====================== Daftar Menu ======================")
+
+    
 
 nama = st.text_input('Nama pelanggan')
 beli = st.number_input("Pilih Menu : ")
