@@ -20,10 +20,10 @@ for i in menu:
 st.write("seluruh menu mempunyai PPN sebesar 10%")
 st.write("=========================================================")
 
-nama = st.text_input("Nama pelanggan")
+nama = st.text_input('Nama pelanggan')
 beli = st.text_input("Pilih Menu : ")
-jumlah = st.number_input("Jumlah Pesanan :")
-harga = ( menu*jumlah )
+jumlah =int(st.number_input("Jumlah Pesanan :"))
+harga = jumlah * menu[beli] 
 ppn = (harga * 0.1 )
 Bayar = (harga+ppn)
 
