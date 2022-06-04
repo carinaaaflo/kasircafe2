@@ -23,7 +23,7 @@ st.write("=========================================================")
 
 beli = st.text_input("Pilih Menu : ")
 jumlah = st.number_input("Jumlah Pesanan :")
-harga = (menu*jumlah )
+harga = (menu * jumlah )
 ppn = (harga * 0.1 )
 Bayar = (harga+ppn)
 
