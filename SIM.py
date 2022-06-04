@@ -16,7 +16,7 @@ st.write("""
     F. Huzlenut Drink: Rp 18.000
     ==============================
     """)
-    pesan = st.text_input("Pilihan menu:")
+    pesan= st.text_input("Pilihan Menu")
     jumlahpesan= st.number_input("masukkan jumlah pesanan :")
 
     if pesan == "ES Kopi Susu":
