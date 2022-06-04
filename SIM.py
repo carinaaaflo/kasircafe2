@@ -11,30 +11,30 @@ st.header("Pilihan Menu")
 contact_selected = st.selectbox("Pilihlah yang anda inginkan")
 Option = (contact_option)
                                     
-    jumlahpesan= st.number_input("masukkan jumlah pesanan :")
+jumlah = st.number_input("Jumlah Pesanan :")
 
 if Menu = "Vanilla Latte :"
-        harga = (11000*jumlahpesan)
+        harga = (11000*jumlah)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
     elif Menu = "ES Kopi Coklat:"
-        harga = (12000*jumlahpesan)
+        harga = (12000*jumlah)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
     elif Menu = "ES Kopi Hitam:"
-        harga = (11000*jumlahpesan)
+        harga = (11000*jumlah)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
     elif Menu = "Ice Americano:"
-        harga = (14000*jumlahpesan)
+        harga = (14000*jumlah)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
     elif Menu = "Rainbow Cake:"
-        harga =(12000*jumlahpesan)
+        harga =(12000*jumlah)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
     elif Menu = "Huzlenut Drink:"
-        harga = (18000*jumlahpesan)
+        harga = (18000*jumlah)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
     
