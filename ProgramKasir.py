@@ -4,14 +4,14 @@ st.title("Kasir Chilless Cafe")
 st.write("-------------------------- Selamat Datang Di Chilless Cafe --------------------------")
 
 menu = {
-    "Chicken Ball":                23000,
-    "French Fries" :               15000,
-    "Vanila Latte" :               18000,
-    "Rose Tea" :                   15000,
-    "Dumpling" :                   12000,
-    "Ice Cream" :                  10000,
-    "Pecel Buaya Darat" :         200000,
-    "Nasi Goreng Cacing Kremi" :  150000,  
+    "1. Chicken Ball  :           @23000",
+    "2. French Fries  :           @15000",
+    "3. Vanila Latte  :           @18000",
+    "4. Rose Tea      :           @15000"
+    "5. Dumpling      :           @12000",
+    "6. Ice Cream     :           @10000",
+    "7. Pecel Buaya Darat :       @200000",
+    "8. Nasi Goreng Cacing Kremi :@150000",  
 }
 st.write("                      Chilless Cafe                      ")
 st.write("====================== Daftar Menu ======================")
@@ -20,7 +20,7 @@ for i in menu:
 st.write("=========================================================")
 
 nama = st.text_input('Nama pelanggan')
-beli = st.text_input("Pilih Menu : ")
+beli = st.number_input("Pilih Menu : ")
 jumlah =int(st.number_input("Jumlah Pesanan :"))
 totalharga = jumlah*beli
 
