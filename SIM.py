@@ -8,8 +8,8 @@ contact_option= ["Vanilla Late 11000", "Es Kopi Coklat 12000", "Es Kopi Hitam 11
 
 st.header("Pilihan Menu")
 
-contact_selected = st.selectbox("Pilihlah yang anda inginkan"
-                                     Option = contact_option)
+contact_selected = st.selectbox("Pilihlah yang anda inginkan")
+Option = (contact_option)
                                     
     jumlahpesan= st.number_input("masukkan jumlah pesanan :")
 
