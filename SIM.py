@@ -3,7 +3,8 @@ import streamlit as st
 
 st.title("                        Selamat Datang Di Tora Bika Cafe                     ")
 
-contact_option = ["Vanilla Late 11000", "Es Kopi Coklat 12000", "Es Kopi Hitam 11000", "Ice Americano 14000","Rainbow Cake 12000", "Huzlenut Drink 18000" ]
+contact_option= ["Vanilla Late 11000", "Es Kopi Coklat 12000", "Es Kopi Hitam 11000", 
+"Ice Americano 14000","Rainbow Cake 12000", "Huzlenut Drink 18000" ]
 
 st.header("Pilihan Menu")
 
