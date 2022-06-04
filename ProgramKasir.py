@@ -23,12 +23,9 @@ st.write("=========================================================")
 nama = st.text_input("Nama pelanggan")
 beli = st.text_input("Pilih Menu : ")
 jumlah = st.number_input("Jumlah Pesanan :")
-harga = (beli * jumlah )
+harga = ( menu*jumlah )
 ppn = (harga * 0.1 )
 Bayar = (harga+ppn)
-
-
-
 
 st.write("====================== Detail Pembayaran ======================")
 st.write("Nama pelanggan           : ",nama)
