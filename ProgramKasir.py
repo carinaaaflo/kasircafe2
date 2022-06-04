@@ -23,11 +23,16 @@ st.write("=========================================================")
 
 beli = st.text_input("Pilih Menu : ")
 jumlah = st.number_input("Jumlah Pesanan :")
-bayar = jumlah * menu[beli] * 0.1
+harga = st.number_input([menu]*jumlah )
+ppn = st.number_input(harga * 0.1 )
+Bayar = st.number_input(harga+PPN)
+
+
 
 
 st.write("====================== Detail Pembayaran ======================")
 st.write("Menu yang dipesan        : ",beli)
 st.write("Jumlah yang dipesan      : ",jumlah)
-st.write("Total Biaya              : ",bayar)
+st.write("PPN                      : ",ppn)
+st.write("Total Biaya              : ",Bayar)
 st.write("                TERIMA KASIH TELAH MEMESAN DI CAFE KAMI ")
