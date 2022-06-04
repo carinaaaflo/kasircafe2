@@ -3,7 +3,6 @@ import streamlit as st
 st.title("Kasir Chilless Cafe")
 st.write("-------------------------- Selamat Datang Di Chilless Cafe --------------------------")
 
-nama = st.text_input("Masukkan Nama Anda")
 menu = {
     "Chicken Ball":                23000,
     "French Fries" :               15000,
@@ -21,9 +20,10 @@ for i in menu:
 st.write("seluruh menu mempunyai PPN sebesar 10%")
 st.write("=========================================================")
 
+nama = st.text_input("Nama pelanggan")
 beli = st.text_input("Pilih Menu : ")
 jumlah = st.number_input("Jumlah Pesanan :")
-harga = (menu * jumlah )
+harga = (beli * jumlah )
 ppn = (harga * 0.1 )
 Bayar = (harga+ppn)
 
