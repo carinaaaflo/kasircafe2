@@ -1,45 +1,38 @@
+from tkinter import Menu
 import streamlit as st
 
 st.title("                        Selamat Datang Di Tora Bika Cafe                     ")
-st.write("""
-    ==============================
-    
-    Tora Bika Cafe
-    List Menu Minuman Kopi Dan Dessert
- 
-    ==============================
-    A. ES Kopi Susu   : Rp 11.000
-    B. ES Kopi Coklat : Rp 12.000
-    C. ES Kopi Hitam  : Rp 11.000
-    D. Ice Americano  : Rp 14.000
-    E. Rainbow Cake   : Rp 12.000
-    F. Huzlenut Drink: Rp 18.000
-    ==============================
-    """)
-    pesan= st.text_input("Pilihan Menu:")
+
+contact_option = ["Vanilla Late 11000", "Es Kopi Coklat 12000", "Es Kopi Hitam 11000", "Ice Americano 14000","Rainbow Cake 12000", "Huzlenut Drink 18000" ]
+
+st.header("Pilihan Menu")
+
+contact_selected = st.selectbox("Pilihlah yang anda inginkan"
+                                     Option = contact_option)
+                                    
     jumlahpesan= st.number_input("masukkan jumlah pesanan :")
 
-    if pesan == "ES Kopi Susu":
+if Menu = "Vanilla Latte :"
         harga = (11000*jumlahpesan)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
-    elif pesan == "ES Kopi Coklat":
+    elif Menu = "ES Kopi Coklat:"
         harga = (12000*jumlahpesan)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
-    elif pesan == "ES Kopi Hitam":
+    elif Menu = "ES Kopi Hitam:"
         harga = (11000*jumlahpesan)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
-    elif pesan == "Ice Americano":
+    elif Menu = "Ice Americano:"
         harga = (14000*jumlahpesan)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
-    elif pesan == "Rainbow Cake":
+    elif Menu = "Rainbow Cake:"
         harga =(12000*jumlahpesan)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
-    elif pesan == "f":
+    elif Menu = "Huzlenut Drink:"
         harga = (18000*jumlahpesan)
         ppn = (harga * 0.1)
         totalharga = (harga+ppn)
@@ -47,7 +40,7 @@ st.write("""
     st.write("--------------------------")
     st.write("TORA BIKA CAFE")
     st.write("--------------------------")
-    st.write("Menu :", pesan )
+    st.write("Menu :",Menu  )
     st.write("Jumlah Pesan :", jumlahpesan)
     st.write("Harga :", harga)
     st.write("PPN :", ppn)
